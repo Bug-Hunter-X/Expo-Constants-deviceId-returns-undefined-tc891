@@ -1,0 +1,1 @@
+This error typically occurs when you're using Expo's `Constants.deviceId` within a React Native component that's rendered before the device ID is fully available.  `Constants.deviceId` is asynchronous; it fetches the device ID from the underlying system. If you try to access it too early, you'll get `undefined` or a similar error.
